@@ -1,0 +1,57 @@
+entrypoint = "main.py"
+modules = ["python-3.11:v23-20240125-d91747b"]
+
+hidden = [".pythonlibs"]
+
+[nix]
+channel = "stable-23_11"
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[[ports]]
+localPort = 5900
+externalPort = 80
+
+[[ports]]
+localPort = 37279
+externalPort = 5173
+exposeLocalhost = true
+
+[[ports]]
+localPort = 40607
+externalPort = 3003
+exposeLocalhost = true
+
+[[ports]]
+localPort = 41221
+externalPort = 3002
+exposeLocalhost = true
+
+[[ports]]
+localPort = 43961
+externalPort = 6000
+exposeLocalhost = true
+
+[[ports]]
+localPort = 51363
+externalPort = 3001
+exposeLocalhost = true
+
+[[ports]]
+localPort = 51921
+externalPort = 4200
+exposeLocalhost = true
+
+[[ports]]
+localPort = 53297
+externalPort = 3000
+exposeLocalhost = true
+
+[[ports]]
+localPort = 60187
+externalPort = 5000
+exposeLocalhost = true
